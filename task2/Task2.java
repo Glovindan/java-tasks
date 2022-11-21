@@ -15,6 +15,7 @@ public class Task2 {
         File circleCoordinatesFile = new File(args[0]);
         File pointsCoordinatesFile = new File(args[1]);
         StringBuilder answer = new StringBuilder(new String());
+
         Scanner circleReader = new Scanner(circleCoordinatesFile);
 
         //Read circle center coordinate
@@ -23,7 +24,7 @@ public class Task2 {
         float circleY = Float.parseFloat(circleCoordinates[1]);
 
         //Read circle radius
-        float circleRadius = Float.parseFloat(circleReader.nextLine());
+        float circleRadius = circleReader.nextFloat();
 
         circleReader.close();
 
